@@ -14,7 +14,7 @@ class Board:
         mine_positions = random.sample(positions, self.mines)
         
         for x, y in mine_positions:
-            self.grid[x][y].mine = True
+            self.grid[x][y].mine = False
 
         self.calculate_adjacent_mines()
         self.mines_placed = True
