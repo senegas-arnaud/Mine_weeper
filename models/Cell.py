@@ -1,6 +1,7 @@
 class Cell:
-    """Différents états de la cellule"""
-    def __init__(self, mine=False):
-        self.mine = mine
-        self.trou = True
-        self.voisine = 0
+    def __init__(self, x, y):
+        self.x, self.y = x, y
+        self.mine = False
+        self.revealed = False
+        self.flag = None
+        self.adjacent_mines = 0
